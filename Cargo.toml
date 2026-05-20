@@ -1,0 +1,3 @@
+[workspace]
+members = ["crates/wasi-keyvalue-redis"]
+resolver = "2"

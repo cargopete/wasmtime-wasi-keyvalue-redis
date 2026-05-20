@@ -1,0 +1,16 @@
+[package]
+name = "wasmtime-wasi-keyvalue-redis"
+version = "0.1.0"
+edition = "2021"
+description = "Redis backend for the wasi:keyvalue Wasmtime host implementation"
+license = "Apache-2.0 WITH LLVM-exception"
+repository = "https://github.com/cargopete/wasmtime-wasi-keyvalue-redis"
+
+[dependencies]
+wasmtime = { version = "44.0", features = ["runtime", "component-model", "std"] }
+redis = "1"
+anyhow = "1"
+
+[dev-dependencies]
+wasmtime-wasi = { version = "44.0" }
+tokio = { version = "1", features = ["macros", "rt-multi-thread"] }
