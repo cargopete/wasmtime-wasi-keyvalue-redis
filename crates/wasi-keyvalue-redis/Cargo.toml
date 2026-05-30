@@ -5,6 +5,9 @@ edition = "2021"
 description = "Redis backend for the wasi:keyvalue Wasmtime host implementation"
 license = "Apache-2.0 WITH LLVM-exception"
 repository = "https://github.com/cargopete/wasmtime-wasi-keyvalue-redis"
+readme = "README.md"
+keywords = ["wasm", "wasi", "keyvalue", "wasmtime", "redis"]
+categories = ["wasm", "database"]
 
 [dependencies]
 wasmtime = { version = "44.0", features = ["runtime", "component-model", "std"] }
